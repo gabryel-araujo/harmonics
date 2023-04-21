@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-zinc-900 p-10">
+    <div class="bg-zinc-700 p-2 rounded-md flex flex-col">
+      <img src="./bass.jpeg" alt="imagem de um baixo" class="rounded-md" />
+      <hr / class="mt-2 mb-1">
+      <h1 class="text-center text-slate-200 title">Campo Harmônico</h1>
+      <p class="text-center text-slate-200 information mb-2">
+        Nesse jogo você irá aprender de forma interativa o campo harmônico maior
+      </p>
+      <div class="flex flex-row justify-around mb-4">
+        <a
+          href="#"
+          class="border-solid border-2 border-zinc-900 rounded-md px-5 bg-zinc-900 text-white"
+          >Jogar</a
+        >
+        <a
+          href="./campo.html"
+          class="border-solid border-2 border-zinc-900 rounded-md px-5 bg-zinc-900 text-white"
+          >Mostrar Campo</a
+        >
+      </div>
+      <select
+        id="selectField"
+        class="rounded-md h-10 bg-zinc-800 text-zinc-400"
+      >
+        <option value="">Selecione...</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+      </select>
+
+      <label for="answerField" class="text-slate-200"
+        >Insira a sua resposta:<span class="text-red-800">*</span></label
+      >
+      <input
+        type="text"
+        id="answerField"
+        placeholder="C Dm Em F Gm Am B"
+        class="p-2 rounded-md bg-zinc-800 placeholder:text-zinc-600 text-slate-200"
+      />
+
+      <div class="mt-10 space-y-20" id="actionButton">
+        <div class="w-full">
+          <div class="flex-1 h-full w-full mx-auto">
+            <div class="flex w-full bg-zinc-800 shadow rounded-lg py-4 px-16">
+              <p
+                class="m-auto inset-0 text-xl font-semibold leading-7 text-center text-slate-200"
+              >
+                Verificar Resposta
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
